@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import Header from './components/header/Header';
 import Home from './components/home/Home';
 import Subjects from './components/subjects/Subjects';
-import logo from './gold-star.svg';
 import './App.css';
 
 class App extends Component {
@@ -10,10 +10,7 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
-          <div className="App-header">
-            <Link to="/home"><span className="App-tagline">Five Star Feedback</span></Link>
-            <Link to="/home"><img src={logo} className="App-logo" alt="logo" /></Link>
-          </div>
+          <Header/>
           <div>
             <Link to="/subjects">Subjects</Link>
             <Route exact path="/home" component={Home} />
