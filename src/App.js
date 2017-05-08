@@ -12,7 +12,7 @@ class App extends Component {
         <div className="App">
           <div className="App-header">
             <Link to="/home"><span className="App-tagline">Five Star Feedback</span></Link>
-            <img src={logo} className="App-logo" alt="logo" />
+            <Link to="/home"><img src={logo} className="App-logo" alt="logo" /></Link>
           </div>
           <div>
             <Link to="/subjects">Subjects</Link>
